@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Use Render's assigned port or fallback to 5000 for local testing
+const PORT = process.env.PORT || process.env.PORT || 5000; // Use Render's assigned port or fallback to 5000 for local testing
 
 // Middleware
 app.use(cors());
